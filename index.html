@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Autopilot | Websites That Book Clients While You Work</title>
+<meta name="description" content="Business Autopilot builds booking websites for Nigerian businesses: clinics, short lets, salons, gyms, restaurants, schools and more. Your own domain, WhatsApp booking buttons, confirmations, reminders and a monthly report. Free sample first.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Business Autopilot | Websites That Book Clients While You Work">
+<meta property="og:description" content="A booking website on your own domain, with WhatsApp Book buttons, confirmations, reminders and a monthly report. Free sample first, domain in your name, live within a week.">
+<meta property="og:locale" content="en_NG">
+<meta name="theme-color" content="#0d0d0f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23c9a35c' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0d0f;
+  --bg-soft:#121214;
+  --surface:#17171a;
+  --surface-2:#1e1e22;
+  --line:#2a2a2f;
+  --text:#f2efe9;
+  --muted:#a9a49b;
+  --muted-2:#7d786f;
+  --accent:#c9a35c;
+  --accent-soft:rgba(201,163,92,.14);
+  --radius:18px;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px; --s8:128px;
+  --font-display:"Playfair Display",Georgia,serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s3)}
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.15}
+h2{font-size:clamp(30px,4vw,44px);margin:var(--s2) 0}
+.section-head{max-width:680px;margin-bottom:var(--s5)}
+.section-head p{color:var(--muted)}
+section{padding:var(--s7) 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease;font-family:var(--font-body)}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--accent);color:#141310}
+.btn-gold:hover{background:#d8b56e}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.no-js .reveal{opacity:1;transform:none}
+
+/* Header */
+header{position:sticky;top:0;z-index:60;background:rgba(13,13,15,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);padding:18px 0}
+.logo{font-family:var(--font-display);font-size:22px;font-weight:700;letter-spacing:.01em}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:var(--s4);list-style:none}
+.nav-links a{font-size:14.5px;color:var(--muted);font-weight:500}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{padding:10px 22px;font-size:14px}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 12px;color:var(--text);cursor:pointer;font-size:18px;line-height:1}
+.mobile-menu{display:none;border-top:1px solid var(--line);padding:var(--s2) 0 var(--s3)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:10px 0;color:var(--muted);font-weight:500}
+.mobile-menu a:hover{color:var(--text)}
+
+/* Hero */
+.hero{padding:var(--s7) 0 var(--s6);background:radial-gradient(900px 480px at 85% -10%,rgba(201,163,92,.13),transparent 60%),var(--bg)}
+.hero h1{font-size:clamp(38px,5.6vw,62px);max-width:820px;margin:var(--s3) 0 var(--s3)}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero .lead{color:var(--muted);font-size:18.5px;max-width:640px;margin-bottom:var(--s4)}
+.hero-ctas{display:flex;gap:var(--s2);flex-wrap:wrap;margin-bottom:var(--s6)}
+.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2);border-top:1px solid var(--line);padding-top:var(--s4)}
+.trust-item strong{display:block;font-family:var(--font-display);font-size:19px;font-weight:600;color:var(--text);margin-bottom:4px}
+.trust-item span{color:var(--muted-2);font-size:13.5px;line-height:1.5;display:block}
+
+/* Sample banner */
+.sample-band{background:linear-gradient(120deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:var(--radius);padding:var(--s5);display:flex;align-items:center;justify-content:space-between;gap:var(--s4);flex-wrap:wrap}
+.sample-band h3{font-size:clamp(22px,3vw,30px);margin-bottom:var(--s1)}
+.sample-band p{color:var(--muted);max-width:560px}
+
+/* Cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4)}
+.card:hover{border-color:rgba(201,163,92,.45)}
+.card .num{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:19px;font-weight:700;margin-bottom:var(--s3)}
+.card h3{font-size:21px;margin-bottom:var(--s1)}
+.card p{color:var(--muted);font-size:15px}
+
+/* Niches */
+.niches{display:flex;flex-wrap:wrap;gap:12px}
+.niche{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:12px 22px;font-weight:600;font-size:15px}
+.niche small{display:block;font-weight:400;color:var(--muted-2);font-size:12.5px}
+
+/* Pricing */
+.founding{background:var(--accent);color:#141310;border-radius:var(--radius);padding:var(--s3) var(--s4);display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s4)}
+.founding strong{font-family:var(--font-display);font-size:21px}
+.founding p{font-size:14.5px;max-width:620px}
+.price-card{position:relative;display:flex;flex-direction:column}
+.price-card.popular{border-color:var(--accent);background:var(--surface-2)}
+.popular-tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#141310;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.price{font-family:var(--font-display);font-size:34px;font-weight:700;margin:var(--s2) 0 2px}
+.price small{font-family:var(--font-body);font-size:14px;color:var(--muted);font-weight:500}
+.price-card ul{list-style:none;margin:var(--s3) 0 var(--s4);flex:1}
+.price-card li{color:var(--muted);font-size:15px;padding:7px 0 7px 26px;position:relative;border-bottom:1px solid rgba(42,42,47,.6)}
+.price-card li:last-child{border-bottom:none}
+.price-card li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.terms{color:var(--muted-2);font-size:14px;text-align:center;margin-top:var(--s4)}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4)}
+.step .step-num{font-family:var(--font-display);font-size:40px;color:var(--accent);font-weight:700;line-height:1;margin-bottom:var(--s2)}
+.step h3{font-size:19px;margin-bottom:var(--s1)}
+.step p{color:var(--muted);font-size:14.5px}
+
+/* FAQ */
+.faq-list{max-width:820px}
+.faq-item{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:12px;overflow:hidden}
+.faq-q{width:100%;background:none;border:none;color:var(--text);text-align:left;padding:20px 24px;font-size:16.5px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:var(--s2);font-family:var(--font-body)}
+.faq-q .arrow{color:var(--accent);transition:transform .25s ease;font-size:14px}
+.faq-item.open .faq-q .arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 24px 20px;color:var(--muted);font-size:15px}
+
+/* Form */
+.form-wrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s5);max-width:820px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:7px;color:var(--text)}
+.field input,.field select{width:100%;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--text);font-size:15px;font-family:var(--font-body)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--accent)}
+.field.full{grid-column:1 / -1}
+.form-note{color:var(--muted);font-size:14.5px;margin-top:var(--s3)}
+.form-done{display:none;margin-top:var(--s4);border:1px solid var(--accent);background:var(--accent-soft);border-radius:14px;padding:var(--s3)}
+.form-done.show{display:block}
+.form-done h3{font-size:20px;margin-bottom:var(--s1)}
+.form-done p{color:var(--muted);font-size:15px;margin-bottom:var(--s3)}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:var(--s6) 0 var(--s4);background:var(--bg-soft)}
+.footer-grid{display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;margin-bottom:var(--s4)}
+footer p,footer a{color:var(--muted);font-size:14.5px}
+footer a:hover{color:var(--accent)}
+.copyright{border-top:1px solid var(--line);padding-top:var(--s3);color:var(--muted-2);font-size:13px}
+
+/* Floating button */
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:70;background:var(--accent);color:#141310;font-weight:700;font-size:14.5px;padding:14px 22px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.45);display:inline-flex;align-items:center;gap:8px}
+.float-ig:hover{background:#d8b56e}
+
+@media (max-width:960px){
+  .grid-3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .trust-row{grid-template-columns:1fr 1fr;gap:var(--s3)}
+}
+@media (max-width:680px){
+  section{padding:var(--s6) 0}
+  .nav-links{display:none}
+  .burger{display:block}
+  .grid-3,.steps,.form-grid{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .form-wrap{padding:var(--s4)}
+  .sample-band{padding:var(--s4)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#top">Business <span>Autopilot</span></a>
+      <ul class="nav-links">
+        <li><a href="#sample">Live sample</a></li>
+        <li><a href="#what">What you get</a></li>
+        <li><a href="#who">Who it is for</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn-gold nav-cta" href="#consult">Book a free consultation</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sample">Live sample</a>
+      <a href="#what">What you get</a>
+      <a href="#who">Who it is for</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#consult">Book a free consultation</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">For Nigerian businesses that run on Instagram and WhatsApp</p>
+      <h1>Websites that <em>book clients</em> while you work.</h1>
+      <p class="lead">We build your business a proper website on your own domain, with a WhatsApp Book button on every service, booking confirmations and reminders that send themselves, and a monthly report that shows you what came in. You keep running your business. The website handles the booking chase.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#consult">Book a free consultation</a>
+        <a class="btn btn-ghost" href="https://icesage101.github.io/autopilot-sample-v2/" target="_blank" rel="noopener">See a live sample</a>
+      </div>
+      <div class="trust-row">
+        <div class="trust-item"><strong>Free sample first</strong><span>We build a sample page for your business before you pay anything.</span></div>
+        <div class="trust-item"><strong>Domain in your name</strong><span>The website and the domain belong to you, registered in your name.</span></div>
+        <div class="trust-item"><strong>Live within a week</strong><span>From approval to a working booking page in about seven days.</span></div>
+        <div class="trust-item"><strong>No long contract</strong><span>Monthly service you can cancel after month 3. No lock in.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live sample -->
+  <section id="sample" style="padding-top:0">
+    <div class="wrap">
+      <div class="sample-band reveal">
+        <div>
+          <p class="eyebrow">See the standard</p>
+          <h3>A live sample booking site</h3>
+          <p>This is a working sample we built to show the standard: service filters, a booking form that lands on WhatsApp, reviews, FAQ and all. Your sample will carry your business name, your services and your number.</p>
+        </div>
+        <a class="btn btn-gold" href="https://icesage101.github.io/autopilot-sample-v2/" target="_blank" rel="noopener">Open the live sample</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section id="what" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What you get</p>
+        <h2>One system, not just a website</h2>
+        <p>A fine page alone does not book clients. The booking flow, the follow ups and the Google presence around it are what turn visitors into appointments.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal"><div class="num">1</div><h3>Booking page on your own domain</h3><p>A fast, premium website at your own address, like yourbusiness.com, instead of a free subdomain or a link list.</p></article>
+        <article class="card reveal"><div class="num">2</div><h3>WhatsApp Book buttons per service</h3><p>Every service gets its own Book button. One tap and the client is on your WhatsApp with the service already named.</p></article>
+        <article class="card reveal"><div class="num">3</div><h3>Confirmations and reminders</h3><p>Booking confirmations, a reminder before the appointment, aftercare messages and next session due reminders, sent on schedule.</p></article>
+        <article class="card reveal"><div class="num">4</div><h3>Google profile cleanup</h3><p>Your Google Business Profile cleaned up and completed, so people searching near you find the right address, hours and number.</p></article>
+        <article class="card reveal"><div class="num">5</div><h3>Review replies system</h3><p>Every Google review gets a professional reply, drafted and posted within 24 hours, good ones and tough ones alike.</p></article>
+        <article class="card reveal"><div class="num">6</div><h3>Monthly report</h3><p>A simple monthly report: calls, WhatsApp taps, bookings and reviews, so you can see what the system is doing for you.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it is for -->
+  <section id="who" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Who it is for</p>
+        <h2>Built for businesses that book, reserve or take enquiries</h2>
+        <p>If your customers find you on Instagram, then DM, then wait, then maybe book, this system was made for you.</p>
+      </div>
+      <div class="niches reveal">
+        <div class="niche">Clinics and medspas<small>Appointments and treatment courses</small></div>
+        <div class="niche">Short lets and hotels<small>Nightly bookings and enquiries</small></div>
+        <div class="niche">Salons and barbers<small>Chairs filled, deposits confirmed</small></div>
+        <div class="niche">Gyms and fitness studios<small>Trials, memberships, renewals</small></div>
+        <div class="niche">Restaurants<small>Reservations and private events</small></div>
+        <div class="niche">Schools and tutoring<small>Enrolment enquiries that get followed up</small></div>
+        <div class="niche">Real estate<small>Viewing requests and listings enquiries</small></div>
+        <div class="niche">Auto services<small>Detailing, repairs and inspections</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Pricing</p>
+        <h2>Plain prices, no surprises</h2>
+        <p>Every package starts with a free sample page for your business, so you judge the work before you judge the price.</p>
+      </div>
+      <div class="founding reveal">
+        <strong>Founding offer</strong>
+        <p>The first 3 clients get the Growth package at ₦100,000 setup, with the monthly fee locked for 6 months. When the 3 spots are gone, Growth returns to ₦150,000 setup.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card price-card reveal">
+          <h3>Launch</h3>
+          <p class="price">₦90,000 <small>setup</small></p>
+          <p class="price" style="font-size:22px;margin-top:0">+ ₦45,000<small>/month</small></p>
+          <ul>
+            <li>One page booking site on your own domain</li>
+            <li>WhatsApp Book buttons for your main services</li>
+            <li>Google Business Profile cleanup</li>
+            <li>Review reply drafts within 24 hours</li>
+          </ul>
+          <a class="btn btn-ghost" href="#consult" style="justify-content:center">Start with a free sample</a>
+        </article>
+        <article class="card price-card popular reveal">
+          <span class="popular-tag">Most popular</span>
+          <h3>Growth</h3>
+          <p class="price">₦150,000 <small>setup</small></p>
+          <p class="price" style="font-size:22px;margin-top:0">+ ₦75,000<small>/month</small></p>
+          <ul>
+            <li>Everything in Launch</li>
+            <li>A page per service, not just one page</li>
+            <li>Booking confirmations and reminders on WhatsApp</li>
+            <li>Next session due and win back messages</li>
+            <li>Monthly promo page and monthly report</li>
+          </ul>
+          <a class="btn btn-gold" href="#consult" style="justify-content:center">Start with a free sample</a>
+        </article>
+        <article class="card price-card reveal">
+          <h3>Multi-branch</h3>
+          <p class="price">₦300,000 <small>setup</small></p>
+          <p class="price" style="font-size:22px;margin-top:0">+ ₦150,000<small>/month</small></p>
+          <ul>
+            <li>Everything in Growth, for every branch</li>
+            <li>A booking page per location</li>
+            <li>Branch level reports, one combined summary</li>
+            <li>Priority support and faster updates</li>
+          </ul>
+          <a class="btn btn-ghost" href="#consult" style="justify-content:center">Start with a free sample</a>
+        </article>
+      </div>
+      <p class="terms">Terms: 70% of setup to start, balance on launch. Monthly fee is prepaid. The domain is registered in your name. You can cancel the monthly service anytime after month 3.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps, about a week</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-num">1</div><h3>Free sample</h3><p>We build a sample booking page for your business, with your services and your WhatsApp number. It costs you nothing.</p></div>
+        <div class="step reveal"><div class="step-num">2</div><h3>You approve it</h3><p>You look at the sample, ask for changes, and decide. No sample approval, no payment. Simple.</p></div>
+        <div class="step reveal"><div class="step-num">3</div><h3>We build on your domain</h3><p>We register your domain in your name and build the full site on it, with the booking flow and Google profile set up.</p></div>
+        <div class="step reveal"><div class="step-num">4</div><h3>Bookings and reports run</h3><p>Confirmations and reminders go out on their own, reviews get replies, and your report lands every month.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Asked by owners like you</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How fast will my website be ready?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Your free sample comes first, usually within a few days. After you approve it and we register your domain, the full site goes live within about a week.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I own the website and the domain?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Yes. The domain is registered in your name and the website is yours. If you ever leave, you keep both. We manage them for you while you are a client, but ownership stays with you.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What if I already have a website?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Then we look at what is missing. Most sites we see have no booking flow, no reminders and a neglected Google profile. We can rebuild on your existing domain or add the booking system to what you have.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do bookings reach me?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Straight to your WhatsApp. The client taps Book on the service they want, and you get a WhatsApp message that already names the service. Confirmations and reminders follow on schedule, so fewer bookings quietly die.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I cancel?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Yes. The monthly service can be cancelled anytime after month 3, with no long contract. Your domain and website stay yours either way.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Why is the sample free?<span class="arrow">▾</span></button>
+          <div class="faq-a"><p>Because talk is cheap. We would rather show you your own business looking the part than describe it. If the sample does not impress you, you keep it and pay nothing.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation -->
+  <section id="consult" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Free consultation</p>
+        <h2>Tell us about your business</h2>
+        <p>Tell us about your business, we reply within one working day with your free sample plan.</p>
+      </div>
+      <div class="form-wrap reveal">
+        <form id="consultForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="fName">Your name</label>
+              <input id="fName" name="name" type="text" placeholder="e.g. Adaeze Okafor" required>
+            </div>
+            <div class="field">
+              <label for="fBiz">Business name</label>
+              <input id="fBiz" name="business" type="text" placeholder="e.g. Glow Studio Lekki" required>
+            </div>
+            <div class="field">
+              <label for="fType">Business type</label>
+              <select id="fType" name="type" required>
+                <option value="">Choose one</option>
+                <option>Clinic or medspa</option>
+                <option>Short let or hotel</option>
+                <option>Salon or barbershop</option>
+                <option>Gym or fitness studio</option>
+                <option>Restaurant or food brand</option>
+                <option>School or tutoring</option>
+                <option>Real estate</option>
+                <option>Auto services</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fWa">WhatsApp number</label>
+              <input id="fWa" name="whatsapp" type="tel" placeholder="Type your WhatsApp number" required>
+            </div>
+            <div class="field">
+              <label for="fNeed">What do you need most?</label>
+              <select id="fNeed" name="need" required>
+                <option value="">Choose one</option>
+                <option>More bookings</option>
+                <option>Better Google presence</option>
+                <option>Follow ups and reminders</option>
+                <option>The full system</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fTime">Preferred call time</label>
+              <select id="fTime" name="calltime" required>
+                <option value="">Choose one</option>
+                <option>Morning, 9am to 12pm</option>
+                <option>Afternoon, 12pm to 4pm</option>
+                <option>Evening, 4pm to 7pm</option>
+                <option>No call needed, reply by message</option>
+              </select>
+            </div>
+          </div>
+          <div style="margin-top:var(--s4)">
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Send and get my free sample plan</button>
+          </div>
+          <p class="form-note">Sending opens a prefilled email to us with your answers. Prefer chat? You can also reach us on Instagram at <a href="https://ig.me/m/villesage" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">@villesage</a>.</p>
+        </form>
+        <div class="form-done" id="formDone" role="status">
+          <h3>Thank you. Your email is ready to send.</h3>
+          <p>Your email app should have opened with everything filled in. Just press send there. If it did not open, or you would rather talk it through, continue on Instagram instead.</p>
+          <a class="btn btn-gold" href="https://ig.me/m/villesage" target="_blank" rel="noopener">Continue on Instagram DM</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="margin-bottom:var(--s1)">Business <span>Autopilot</span></p>
+        <p>Websites that book clients while you work.</p>
+      </div>
+      <div>
+        <p style="color:var(--text);font-weight:600;margin-bottom:var(--s1)">Talk to us</p>
+        <p><a href="#consult">Book a free consultation</a></p>
+        <p><a href="mailto:voiceof015@gmail.com">voiceof015@gmail.com</a></p>
+        <p><a href="https://ig.me/m/villesage" target="_blank" rel="noopener">Instagram: @villesage</a></p>
+      </div>
+      <div>
+        <p style="color:var(--text);font-weight:600;margin-bottom:var(--s1)">Based in</p>
+        <p>Lagos, Nigeria</p>
+        <p>Working with businesses across Nigeria</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Business Autopilot. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://ig.me/m/villesage" target="_blank" rel="noopener" aria-label="Chat with us on Instagram">Chat with us</a>
+
+<script>
+// Mobile menu
+var burger = document.getElementById('burger');
+var mobileMenu = document.getElementById('mobileMenu');
+burger.addEventListener('click', function(){
+  var open = mobileMenu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+mobileMenu.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+});
+
+// FAQ accordion, one open at a time
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var q = item.querySelector('.faq-q');
+  var a = item.querySelector('.faq-a');
+  q.addEventListener('click', function(){
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(other){
+      other.classList.remove('open');
+      other.querySelector('.faq-a').style.maxHeight = null;
+      other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      a.style.maxHeight = a.scrollHeight + 'px';
+      q.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+// Scroll reveal
+if('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: .12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+}
+
+// Consultation form: prefilled email, then Instagram option
+document.getElementById('consultForm').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var biz = document.getElementById('fBiz').value.trim();
+  var type = document.getElementById('fType').value;
+  var wa = document.getElementById('fWa').value.trim();
+  var need = document.getElementById('fNeed').value;
+  var time = document.getElementById('fTime').value;
+  if(!name || !biz || !type || !wa || !need || !time){
+    alert('Please fill in every field so we can plan your free sample properly.');
+    return;
+  }
+  var subject = 'Free consultation request: ' + biz;
+  var body = 'Name: ' + name + '\n'
+    + 'Business name: ' + biz + '\n'
+    + 'Business type: ' + type + '\n'
+    + 'WhatsApp number: ' + wa + '\n'
+    + 'What I need most: ' + need + '\n'
+    + 'Preferred call time: ' + time + '\n\n'
+    + 'Please reply with my free sample plan.';
+  window.location.href = 'mailto:voiceof015@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  document.getElementById('formDone').classList.add('show');
+  document.getElementById('formDone').scrollIntoView({behavior:'smooth', block:'center'});
+});
+</script>
+</body>
+</html>
